@@ -2,24 +2,92 @@
 <html>
 
 <head>
-    <title>Cheatsheets </title>
+    <title>Cheatsheets for Bash</title>
 </head>
 
 <body>
-    <h3>Cheatsheets</h3>
+    <a href="..">Go back</a>
+
+    <h1>What I learned about Bash</h1>
+
+    <h3>Navigating</h3>
+
     <ul>
         <li>
-            Change directory:
-            <pre>cd "{directory name}"</pre>
-        </li>
-        <li>Make directory:
-            <pre>mkdir {directory name}</pre>
+            <code>cd name_of_directory</code>
         </li>
         <li>
-            Remove directory:
-            <pre> rmdir {directory name}</pre>
+            <code>cd ..</code> <i># Go up one</i>
+        </li>
+        <li>
+            <code>cd ~</code> <i># Go to home</i>
+        </li>
+        <li>
+            <code>pwd</code> <i># Where am I?</i>
         </li>
     </ul>
+
+    <h3>Listing files</h3>
+
+    <ul>
+        <li>
+            <code>ls</code> <i># List files</i>
+        </li>
+        <li>
+            <code>ls -a</code> <i># See hidden</i>
+        </li>
+        <li>
+            <code>ls -l</code> <i># See more info</i>
+        </li>
+        <li>
+            <code>ls -R</code> <i># Recursive</i>
+        </li>
+    </ul>
+
+    <h3>Moving and renaming</h3>
+
+    <ul>
+        <li>
+            <code>mv file.txt new_name.txt</code>
+        </li>
+        <li>
+            <code>mv file.txt ../new/place/</code>
+        </li>
+    </ul>
+
+    <h3>Copying</h3>
+
+    <ul>
+        <li>
+            <code>cp file.txt file_backup.txt</code>
+        </li>
+        <li>
+            <code>cp -r directory/ backup/</code>
+        </li>
+    </ul>
+
+    <h3>Creating</h3>
+
+    <ul>
+        <li>
+            <code>mkdir my_directory</code>
+        </li>
+        <li>
+            <code>touch empty_file.html</code>
+        </li>
+    </ul>
+
+    <h3>Reading data from file</h3>
+
+    <ul>
+        <li>
+            <code>cat filename.txt</code>
+        </li>
+        <li>
+            <code>cat file1 file2 file3</code>
+        </li>
+    </ul>
+
 </body>
 
 </html>

@@ -2,21 +2,53 @@
 <html>
 
 <head>
-    <title>Cheatsheets</title>
+    <title>Cheatsheets for Git</title>
 </head>
 
 <body>
-    <h3>Committing a file to repository</h3>
+
+    <h1>What I learned about Bash</h1>
+
+    <h3>Starting (local) repo</h3>
     <ul>
         <li>
-            First Command:
-            <pre>git add {filename}</pre>
-        </li>
-        <li>
-            Seconde Command:
-            <pre></pre>
+            <code>git init</code>
         </li>
     </ul>
+
+    <h3>Starting with repo from GitHub</h3>
+    <ul>
+        <li>
+            <code>git clone https://github.com/user/repo</code>
+        </li>
+    </ul>
+
+    <h3>Adding and committing</h3>
+    <ul>
+        <li>
+            <code>git add .</code> <i># "Stage" all</i>
+        </li>
+        <li>
+            <code>git commit -m "Fixed :)"</code>
+        </li>
+    </ul>
+
+    <h3>Github workflow</h3>
+    <ul>
+        <li>
+            <p><i># After you do some work...</i></p>
+        </li>
+        <li>
+            <code>git add .</code>
+        </li>
+        <li>
+            <code>git commit -m "it works!"</code>
+        </li>
+        <li>
+            <code>git push origin master</code>
+        </li>
+    </ul>
+
 </body>
 
 </html>
