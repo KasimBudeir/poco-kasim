@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .red {
+            font-size: 25px;
+            color: red;
+            margin-bottom: 10px;
+        }
+
+        .blue {
+            font-size: 25px;
+            color: blue;
+            margin-bottom: 10px;
+        }
+
+        .warning {
+            width: 300px;
+            height: 100px;
+            background-color: coral;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        div  {
+            margin: 10px;
+        }
+        div .addelem{
+            
+        }
+    </style>
+</head>
+
+<body>
+<h1>Hello every one in javascript</h1>
+<h1>hellow Bilal in java script</h1>
+<h1>hellow Moyad in java script</h1>
+
+
+    <div id="main">
+    </div>
+    <div class="addelem">
+        <button onclick="addNewElement()">Add New Html Element</button>
+    </div>
+    <div id="main2">
+        <p id="p1">changing the style from js using id selector</p>
+        <button onclick="setClassName()" class="button">Chang Color By id selector</button>
+
+
+        <p id="p2">changing style from javascript using query selector </p>
+        
+    </div>
+   
+    <div>
+        <button onclick="addListElement()" class="button">Add list of html items</button>
+    </div>
+
+    <script>
+
+        document.getElementById("main").innerHTML = "Hello me in java script";
+
+        function setClassName() {
+
+            document.getElementById('p1').classList.toggle('blue');
+
+        }
+
+
+        function setNewStyle() {
+
+            document.getElementById('p2').style.color = "red";
+
+        }
+
+        function addNewElement(){
+            let para = document.createElement('p');
+            console.log('creating element function is working');
+            para.textContent = 'I am a new element';
+            let element = document.getElementById('main');
+            
+             element.appendChild(para);
+            // element.innerHTML += `<p> I am a new element</p>`;
+           
+        }
+        function addListElement(){
+            let element2 = document.getElementById('main2');
+            let myNodeList = document.querySelectorAll('h1');
+            console.log(myNodeList.length);
+           ;
+            for (i=0 ; i < myNodeList.length; i++){
+                console.log(myNodeList[i]);
+                element2.appendChild(myNodeList[i]);
+            }
+
+        }
+    
+
+
+    </script>
+
+</body>
+
+</html>
