@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>String&Array</title>
+</head>
+
+<body>
+    <h1></h1>
+    <h1>Strings and Arrays</h1>
+    <h2>Creating an array and using 3 different methods</h2>
+    <div>
+        <h3>This is a list of fruit in german :</h3>
+        <p id="normal"></p>
+
+        <h3>This is a list after reversing the items :</h3>
+        
+        <button onclick="reverse()" >Reverse</button>
+        <p id="reverse"></p>
+        
+
+        <h3>This is s list after performing a slice function : <span style="color :red">slice(1,4)</span> </h3>
+        <button onclick="slice()" >Slice</button>
+        <p> <b>Note :</b>This method does not change the original array </p>
+        <p id="slice"></p>
+        
+
+        <h3>This is the list sfter splice method : <span style="color :red">splice(2, 0,"die Birne","die Orange")</span>
+        </h3>
+        <p> <b>Note :</b>This method changes the original array </p>
+        <p id="splice"></p>
+        <h3>This is the list after mapping </h3>
+        <p id="mapping"></p>
+
+
+        <h2>Creating a string variable and trying 3 different method :</h2>
+        <h3>The lastIndexOf() method returns the position of the last occurrence of a specified text:</h3>
+        <p>The <b>position</b> of 'coding' in ("PowerCoders is a great coding academy") is :</p>
+        <p id="demo1"></p>
+
+
+        <p>Replace "great" with "wonderful" in the paragraph below:</p>
+        <button onclick="myFunction()">Try it</button>
+        <p id="demo2">PowerCoders is a great coding academy!</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
