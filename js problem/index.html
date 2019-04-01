@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>chang_para_class</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <p id="mypara"> This is a paragraph of text that can </p>
+    <ul>
+        <li onclick="setClassWarning()">make it a warning</li>
+        <li onclick="setClassTip()"> make it a tip</li>
+        <li onclick="clearClass()">make it normal</li>
+    </ul>
+    <p class="warning">this is an example warning</p>
+    <p class="tip">this is an example tip</p>
+    <script>
+        console.log('My code is runing');
+
+        let greet = function (name) {
+            console.log('Hello ' + name);
+        }
+
+        let setClassTip = function () {
+            let element = document.getElementById('mypara');
+            element.className = 'tip';
+
+        }
+        function setClassWarning() {
+            let element = document.getElementById('mypara');
+            element.className = 'warning';
+        }
+
+        function clearClass() {
+            let element = document.getElementById('mypara');
+            element.className = '';
+        }
+
+    </script>
+</body>
+
+</html>
