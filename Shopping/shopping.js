@@ -1,6 +1,7 @@
-console.log('Hello I am working');
 document.querySelector('button').addEventListener('click', function (event) {
     let inputBox = document.getElementById('item');
+    //to start typping after adding item in input element
+    inputBox.focus();
     if (inputBox.value !==""){
         let myShoppingList = document.getElementById('my-shoppingList');
         myShoppingList.appendChild(createNewListItem(inputBox.value));  
@@ -14,6 +15,8 @@ alert('It is empty value');
     
     
 });
+// start typping in this element
+document.getElementById('item').focus();
 
 document.getElementById('item').addEventListener('keyup', function (event) {
     if (event.key === 'Enter'){
