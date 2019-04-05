@@ -1,7 +1,8 @@
 
 let inputBox = document.getElementById('item');
 let myShoppingList = document.getElementById('my-shoppingList');
-
+let addItemButton = document.getElementById('addItemBtn');
+addItemButton.disabled = true;
 document.querySelector('button').addEventListener('click', function (event) {
     //to start typping after adding item in input element
     inputBox.value = inputBox.value.trim();
@@ -17,15 +18,23 @@ document.querySelector('button').addEventListener('click', function (event) {
 
     inputBox.value = '';
     inputBox.focus();
+    addItemButton.disabled = true;//disable the addItemButton after clicking it
 
 });
 // start typping in this element
 inputBox.focus();
 
 document.getElementById('item').addEventListener('keyup', function (event) {
-    if (event.key === 'Enter') {
-        document.querySelector('button').click();
+    if (inputBox.value.trim()){// by this if we check the inputBox(after cleaning the white space) if it is empty the addbutton will be disabled else will be enable
+        addItemButton.disabled = false;
+        if (event.key === 'Enter') {
+            document.querySelector('button').click();
+        }
     }
+    else{
+        addItemButton.disabled = true;
+    }
+   
 
 });
 
